@@ -18,7 +18,7 @@ CREATE TABLE course (
     department VARCHAR2(30)
 );
 ```
-![output](output week1/create course.jpeg)
+![output](output week1/create-course.jpeg)
 #section table creation
 CREATE TABLE section (
     section_identifier NUMBER,
