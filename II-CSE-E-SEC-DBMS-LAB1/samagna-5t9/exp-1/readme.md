@@ -8,15 +8,17 @@ CREATE TABLE student (
     major VARCHAR2(20)
 );
 ```
-![output](outputweek1/create student.jpeg)
+![output](output week1/create student.jpeg)
 # course table creation
+```
 CREATE TABLE course (
     course_name VARCHAR2(50),
     course_number VARCHAR2(10),
     credit_hours NUMBER,
     department VARCHAR2(30)
 );
-![output](create course)
+```
+![output](output week1/create course.jpeg)
 #section table creation
 CREATE TABLE section (
     section_identifier NUMBER,
