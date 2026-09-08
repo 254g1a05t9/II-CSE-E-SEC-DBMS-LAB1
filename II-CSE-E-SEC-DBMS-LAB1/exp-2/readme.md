@@ -81,11 +81,11 @@ DESC boats;
 ```
 SELECT * FROM Sailors;
 ```
-![output]()
+![output](<output week2/output sailors.jpeg>)
 ```
 SELECT * FROM Reserves;
 ```
-![output]()
+![output](<output week2/output reserves.jpeg>)
 ```
 SELECT * FROM Boats;
 ```
