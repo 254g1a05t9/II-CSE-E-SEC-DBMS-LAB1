@@ -19,7 +19,7 @@ CREATE TABLE course (
 );
 ```
 ![output](output week1/create-course.jpeg)
-#section table creation
+# section table creation
 CREATE TABLE section (
     section_identifier NUMBER,
     course_number VARCHAR2(10),
