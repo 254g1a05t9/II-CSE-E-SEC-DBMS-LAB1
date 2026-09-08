@@ -90,49 +90,68 @@ SELECT * FROM Reserves;
 SELECT * FROM Boats;
 ```
 ![output](<output week2/output boats.jpeg>)
-
+```
 SELECT sname,age FROM Sailors;
+```
 ![output](<output week2/qs1.jpeg>)
+```
 SELECT sname FROM Sailors WHERE rating>7;
+```
 ![output](<output week2/qs2.jpeg>)
+```
 SELECT s.sname FROM Sailors s,Reserves r
 WHERE s.sid=r.sid
 AND r.bid=103;
-![output](<output week2/qs3)
+```
+![output](<output week2/qs3.jpeg>)
+```
 SELECT DISTINCT r.sid
 FROM Reserves r,Boats b
 WHERE r.bid=b.bid
 AND b.color='red';
-![output](qs4)
+```
+![output](<output week2/qs4.jpeg>)
+```
 SELECT  DISTINCT s.sname FROM Sailors s,Reserves r,Boats b
 WHERE s.sid=r.sid
 AND r.bid=b.bid
 AND b.color='red';
-![output](qs5)
+```
+![output](<output week2/qs5.jpeg>)
+```
 SELECT b.color FROM Sailors s,Reserves r,Boats b
 WHERE s.sid=r.sid
 AND r.bid=b.bid
 AND s.sname='Lubber';
-![output](q6)
+```
+![output](<output week2/q6.jpeg>)
+```
 SELECT DISTINCT s.sname FROM Sailors s,Reserves r
 WHERE s.sid=r.sid;
-![output](qs7)
+```
+![output](<output week2/qs7.jpeg>)
+```
 SELECT DISTINCT s.sname,rating+1 AS incremented_rating
 FROM Sailors s,Reserves r1,Reserves r2
 WHERE s.sid=r1.sid AND r1.sid=r2.sid
 AND r2.day=r2.day AND r1.bid < > r2.bid;
-![output](qs8)
-
+```
+![output](<output week2/qs8.jpeg>)
+```
 SELECT age
 FROM Sailors
 WHERE sname LIKE 'B%b'
 AND LENGTH(sname) >= 3;
-![output](qs9)
+```
+![output](<output week2/qs9.jpeg>)
+```
 SELECT s.sname FROM Sailors s,Reserves r,Boats b
 WHERE s.sid=r.sid
 AND r.bid=b.bid
 AND(b.color='red' OR b.color='green');
-![output](qs10)
+```
+![output](<output week2/qs10.jpeg>)
+```
 SELECT s.sname
 FROM Sailors s
 WHERE s.sid IN
@@ -149,8 +168,9 @@ AND s.sid IN
     WHERE r.bid = b.bid
     AND b.color = 'green'
 );
-![output](qs11)
-
+```
+![output](<output week2/qs11.jpeg>)
+```
 SELECT DISTINCT r.sid
 FROM Reserves r, Boats b
 WHERE r.bid = b.bid
@@ -162,8 +182,9 @@ AND r.sid NOT IN
     WHERE r2.bid = b2.bid
     AND b2.color = 'green'
 );
-![output](qs12)
-
+```
+![output](<output week2/qs12.jpeg>)
+```
 SELECT sid
 FROM Sailors
 WHERE rating = 10
@@ -173,27 +194,31 @@ UNION
 SELECT sid
 FROM Reserves
 WHERE bid = 104;
-![output](qs13)
-
+```
+![output](<output week2/qs13.jpeg>)
+```
 SELECT DISTINCT s.sname
 FROM Sailors s, Reserves r
 WHERE s.sid = r.sid
 AND r.bid = 103;
-![output](qs14)
-
+```
+![output](<output week2/qs14.jpeg>)
+```
 SELECT DISTINCT s.sname
 FROM Sailors s, Reserves r, Boats b
 WHERE s.sid = r.sid
 AND r.bid = b.bid
 AND b.color = 'red';
-![output](qs15)
-
+```
+![output](<output week2/qs15.jpeg>)
+```
 SELECT DISTINCT s.sname
 FROM Sailors s, Reserves r
 WHERE s.sid = r.sid
 AND r.bid = 103;
-![output](qs16)
-
+```
+![output](<output week2/qs16.jpeg>)
+```
 SELECT *
 FROM Sailors
 WHERE rating > ANY
@@ -202,8 +227,9 @@ WHERE rating > ANY
     FROM Sailors
     WHERE sname = 'Horatio'
 );
-![output](qs17)
-
+```
+![output](<output week2/qs17.jpeg>)
+```
 SELECT * FROM Sailors
 (
     SELECT rating
@@ -211,18 +237,18 @@ SELECT * FROM Sailors
     WHERE sname = 'Horatio'
 
 );
-![output](qs18)
-
-
+```
+![output](<output week2/qs18.jpeg>)
+```
 SELECT * FROM Sailors
 WHERE rating =
 (
     SELECT MAX(rating)
     FROM Sailors
 );
-
-![output](qs19)
-
+```
+![output](<output week2/qs19.jpeg>)
+```
 SELECT s.sname
 FROM Sailors s
 WHERE s.sid IN
@@ -240,8 +266,9 @@ AND s.sid IN
     WHERE r.bid = b.bid
     AND b.color = 'green'
 );
-![output](qs20)
-
+```
+![output](<output week2/qs20.jpeg>)
+```
 SELECT s.sname FROM Sailors s
 WHERE NOT EXISTS
 (
@@ -255,19 +282,20 @@ WHERE NOT EXISTS
         AND r.bid = b.bid
     )
 );
-![output](q21)
-
-
+```
+![output](<output week2/qs21.jpeg>)
+```
 SELECT AVG(age)
 FROM Sailors;
-![output](qs22)
-
+```
+![output](<output week2/qs22.jpeg>)
+```
 SELECT AVG(age)
 FROM Sailors
 WHERE rating = 10;
-![output](qs23)
-
-
+```
+![output](<output week2/qs23.jpeg>)
+```
 SELECT sname, age
 FROM Sailors
 WHERE age =
@@ -275,19 +303,19 @@ WHERE age =
     SELECT MAX(age)
     FROM Sailors
 );
-![output](qs24)
-
-
+```
+![output](<output week2/qs24.jpeg>)
+```
 SELECT COUNT(*)
 FROM Sailors;
-![output](q25)
-
-
+```
+![output](<output week2/qs25.jpeg>)
+```
 SELECT COUNT(DISTINCT sname)
 FROM Sailors;
-![output](qs26)
-
-
+```
+![output](<output week2/qs26.jpeg>)
+```
 SELECT sname
 FROM Sailors
 WHERE age >
@@ -296,58 +324,63 @@ WHERE age >
     FROM Sailors
     WHERE rating = 10
 );
-![output](qs27)
-
-
+```
+![output](<output week2/qs27.jpeg>)
+```
 SELECT rating, MIN(age)
 FROM Sailors
 GROUP BY rating;
-![output](qs28)
-
-
+```
+![output](<output week2/qs28.jpeg>)
+```
 SELECT rating, MIN(age)
 FROM Sailors
 WHERE age >= 18
 GROUP BY rating
 HAVING COUNT(*) >= 2;
-![output](qs29)
-
-
+```
+![output](<output week2/qs29.jpeg>)
+```
 SELECT b.bid, COUNT(r.sid) AS reservations
 FROM Boats b
 LEFT JOIN Reserves r
 ON b.bid = r.bid
 WHERE b.color = 'red'
 GROUP BY b.bid;
-![output](qs30)
-
+```
+![output](<output week2/qs30.jpeg>)
+```
 SELECT rating, AVG(age)
 FROM Sailors
 GROUP BY rating
 HAVING COUNT(*) >= 2;
-![output](qs31)
-
-SELECT rating, AVG(age)
-FROM Sailors
-WHERE age >= 18
-GROUP BY rating
-HAVING COUNT(*) >= 2;
-![output](qs31)
-
+```
+![output](<output week2/qs31.jpeg>)
+```
 SELECT rating, AVG(age)
 FROM Sailors
 WHERE age >= 18
 GROUP BY rating
 HAVING COUNT(*) >= 2;
-![output](qs32)
-
+```
+![output](<output week2/qs31.jpeg>)
+```
 SELECT rating, AVG(age)
 FROM Sailors
 WHERE age >= 18
 GROUP BY rating
 HAVING COUNT(*) >= 2;
-![output](qs33)
-
+```
+![output](<output week2/qs32.jpeg>)
+```
+SELECT rating, AVG(age)
+FROM Sailors
+WHERE age >= 18
+GROUP BY rating
+HAVING COUNT(*) >= 2;
+```
+![output](<output week2/qs33.jpeg>)
+```
 SELECT rating
 FROM Sailors
 GROUP BY rating
@@ -361,4 +394,5 @@ HAVING AVG(age) =
         GROUP BY rating
     ) x
 );
-![output](qs34)
+```
+![output](<output week2/qs34.jpeg>)
