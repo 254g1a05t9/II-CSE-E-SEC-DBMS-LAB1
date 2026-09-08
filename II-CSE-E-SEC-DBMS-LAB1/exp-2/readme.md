@@ -10,14 +10,16 @@ CREATE TABLE Sailors (
 ```
 ![output 1](output week2/create sailors.jpeg)
 # Boats table creation
+```
 CREATE TABLE Boats (
  bid NUMBER PRIMARY KEY,
  bname VARCHAR2(20) NOT NULL,
  color VARCHAR2(10) NOT NULL
 );
+```
 ![output 2](create boats)
-#reserves table creation
-
+# reserves table creation
+```
 CREATE TABLE Reserves (
     sid NUMBER NOT NULL,
     bid NUMBER NOT NULL,
@@ -26,14 +28,16 @@ CREATE TABLE Reserves (
     FOREIGN KEY (sid) REFERENCES Sailors(sid),
     FOREIGN KEY (bid) REFERENCES Boats(bid)
 );
+```
 ![output 3](create reserves)
+```
 SELECT * FROM tab;
 SELECT * FROM Reserves;
 SELECT age FROM Sailors;
-
+```
 INSERT INTO Boats
 VALUES(22,'Dustin',7,45.0);
-
+```
 INSERT INTO Sailors VALUES (22, 'Dustin', 7, 45.0);
 INSERT INTO Sailors VALUES (29, 'Brutus', 1, 33.0);
 INSERT INTO Sailors VALUES (31, 'Lubber', 8, 55.5);
@@ -44,9 +48,10 @@ INSERT INTO Sailors VALUES (71, 'Zorba', 10, 16.0);
 INSERT INTO Sailors VALUES (74, 'Horatio', 9, 35.0);
 INSERT INTO Sailors VALUES (85, 'Art', 3, 25.5);
 INSERT INTO Sailors VALUES (95, 'Bob', 3, 63.5);
+```
 ![output 4](insert sailors)
 ![output 5]()
-
+```
 INSERT INTO Reserves VALUES (22, 101, TO_DATE('10/10/98','MM/DD/RR'));
 INSERT INTO Reserves VALUES (22, 102, TO_DATE('10/10/98','MM/DD/RR'));
 INSERT INTO Reserves VALUES (22, 103, TO_DATE('10/8/98','MM/DD/RR'));
@@ -58,25 +63,39 @@ INSERT INTO Reserves VALUES (31, 104, TO_DATE('11/12/98','MM/DD/RR'));
 INSERT INTO Reserves VALUES (64, 101, TO_DATE('9/5/98','MM/DD/RR'));
 INSERT INTO Reserves VALUES (64, 102, TO_DATE('9/8/98','MM/DD/RR'));
 INSERT INTO Reserves VALUES (74, 103, TO_DATE('9/8/98','MM/DD/RR'));
+```
 ![output 6](insert reserves)
 ![output 7]()
-
+```
 INSERT INTO Boats VALUES (101, 'Interlake', 'blue');
 INSERT INTO Boats VALUES (102, 'Interlake', 'red');
 INSERT INTO Boats VALUES (103, 'Clipper', 'green');
 INSERT INTO Boats VALUES (104, 'Marine', 'red');
+```
 ![output 8](insert boats)
+```
 DESC sailors;
+```
 ![output](desc sailors)
+```
 DESC reserves;
+```
 ![output](desc reserves)
+```
 DESC boats;
+```
 ![output](desc boats)
+```
 SELECT * FROM Sailors;
+```
 ![output]()
+```
 SELECT * FROM Reserves;
+```
 ![output]()
+```
 SELECT * FROM Boats;
+```
 ![output](output boats)
 
 SELECT sname,age FROM Sailors;
