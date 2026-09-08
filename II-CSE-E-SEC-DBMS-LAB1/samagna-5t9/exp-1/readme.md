@@ -18,7 +18,7 @@ CREATE TABLE course (
     department VARCHAR2(30)
 );
 ```
-![output](output week1/create-course.jpeg)
+![output](<output week1/create-course.jpeg>)
 # section table creation
 ```
 CREATE TABLE section (
@@ -29,7 +29,7 @@ CREATE TABLE section (
     instructor VARCHAR2(50)
 );
 ```
-![output](create section)
+![output](<output week1/section.jpeg>)
 # grade_report table creation
 ```
 CREATE TABLE grade_report (
@@ -38,30 +38,30 @@ CREATE TABLE grade_report (
     grade VARCHAR2(1)
 );
 ```
-![output](create grade)
+![output](<output week1/create grade.jpeg>)
 # describing of tables
 ```
 DESC student;
 ```
-![output](desc student)
+![output](<output week1/desc student.jpeg>)
 ```
 DESC course;
 ```
-![output](desc course)
+![output](<output week1/desc course.jpeg>)
 ```
 DESC section;
 ```
-![output](desc section)
+![output](<output week1/desc section.jpeg>)
 ```
 DESC grade_report;
 ```
-![output](desc grade)
+![output](<output week1/desc grade.jpeg>)
 # insertion into student
 ```
 INSERT INTO student VALUES ('Smith', 17, 1, 'CS');
 INSERT INTO student VALUES ('Brown', 18, 2, 'CS');
 ```
-![output](insert student)
+![output](<output week1/insert student.jpeg>)
 # insertion into course
 ```
 INSERT INTO course VALUES ('Intro to Computer Science', 'CS1310', 4, 'CS');
@@ -69,7 +69,7 @@ INSERT INTO course VALUES ('Data Structures', 'CS3320', 4, 'CS');
 INSERT INTO course VALUES ('Discrete Mathematics', 'MATH2410', 3, 'MATH');
 INSERT INTO course VALUES ('Database Systems', 'CS3380', 3, 'CS');
 ```
-![output](insert course)
+![output](<output week1/insert course.jpeg>)
 # insertion into section
 ```
 INSERT INTO SECTION VALUES(85,'MATH2410','Fall',07,'King');
@@ -79,7 +79,7 @@ INSERT INTO SECTION VALUES(112,'MATH2410','Fall',08,'Chang');
 INSERT INTO SECTION VALUES(119,'CS1310','Fall',08,'Anderson');
 INSERT INTO SECTION VALUES(135,'CS3320','Fall',08,'Stone');
 ```
-![output](insert section)
+![output](<output week1/insert section.jpeg>)
 # insertion into grade_report
 ```
 INSERT INTO GRADE_REPORT VALUES(17,112,'B');
@@ -89,45 +89,45 @@ INSERT INTO GRADE_REPORT VALUES(8,92,'A');
 INSERT INTO GRADE_REPORT VALUES(8,102,'B');
 INSERT INTO GRADE_REPORT VALUES(8,135,'A');
 ```
-![output](insert grade)
+![output](<output week1/insert grade.jpeg>)
 # table of student
 ```
 SELECT * FROM student;
 ```
-![output](select student)
+![output](<output week1/select student.jpeg>)
 # table of course
 ```
 SELECT * FROM course;
 ```
-![output](insert course)
+![output](<output week1/insert course.jpeg>)
 # table of section
 ```
 SELECT * FROM section;
 ```
-![output](insert section)
+![output](<output week1/insert section.jpeg>)
 # table of grade_report
 ```
 SELECT * FROM grade_report;
 ```
-![output](insert grade)
+![output](<output week1/insert grade.jpeg>)
 # drop table of grade_report
 ```
 DROP TABLE grade_report;
 ```
-![output](drop grade)
+![output](<output week1/drop grade.jpeg>)
 # drop table of section
 ```
 DROP TABLE section;
 ```
-![output](drop section)
+![output](<output week1/drop section.jpeg>)
 # drop table of course
 ```
 DROP TABLE course;
 ```
-![output](drop course)
+![output](<output week1/drop course.jpeg>)
 # drop table of student
 ```
 DROP TABLE student;
 ```
-![output](output week1/drop student)
+![output](<output week1/drop student.jpeg>)
 
