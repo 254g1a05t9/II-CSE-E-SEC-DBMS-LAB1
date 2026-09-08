@@ -1,12 +1,14 @@
-#WEEK-1 DBMSLAB
-#students table creation
+# WEEK-1 DBMSLAB
+# students table creation
+```
 CREATE TABLE student (
     name VARCHAR2(50),
     student_number NUMBER,
     class VARCHAR2(20),
     major VARCHAR2(20)
 );
-![output](create student)
+```
+![output](output week1/create student.jpeg)
 #course table creation
 CREATE TABLE course (
     course_name VARCHAR2(50),
