@@ -9,7 +9,7 @@ CREATE TABLE student (
 );
 ```
 ![output](output week1/create student.jpeg)
-#course table creation
+# course table creation
 CREATE TABLE course (
     course_name VARCHAR2(50),
     course_number VARCHAR2(10),
