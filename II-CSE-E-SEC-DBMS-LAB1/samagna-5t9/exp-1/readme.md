@@ -8,7 +8,7 @@ CREATE TABLE student (
     major VARCHAR2(20)
 );
 ```
-![output](output week1/create student.jpeg)
+![output](outputweek1/create student.jpeg)
 # course table creation
 CREATE TABLE course (
     course_name VARCHAR2(50),
