@@ -8,7 +8,7 @@ CREATE TABLE Sailors (
     age NUMBER(4,1) NOT NULL
 );
 ```
-![output 1](output week2/create sailors.jpeg)
+![output 1](<output week2/create sailors.jpeg>)
 # Boats table creation
 ```
 CREATE TABLE Boats (
@@ -17,7 +17,7 @@ CREATE TABLE Boats (
  color VARCHAR2(10) NOT NULL
 );
 ```
-![output 2](create boats)
+![output 2](<output week2/create boats.jpeg>)
 # reserves table creation
 ```
 CREATE TABLE Reserves (
@@ -29,14 +29,7 @@ CREATE TABLE Reserves (
     FOREIGN KEY (bid) REFERENCES Boats(bid)
 );
 ```
-![output 3](create reserves)
-```
-SELECT * FROM tab;
-SELECT * FROM Reserves;
-SELECT age FROM Sailors;
-```
-INSERT INTO Boats
-VALUES(22,'Dustin',7,45.0);
+![output 3](<output week2/create reserves.jpeg>)
 ```
 INSERT INTO Sailors VALUES (22, 'Dustin', 7, 45.0);
 INSERT INTO Sailors VALUES (29, 'Brutus', 1, 33.0);
@@ -49,8 +42,8 @@ INSERT INTO Sailors VALUES (74, 'Horatio', 9, 35.0);
 INSERT INTO Sailors VALUES (85, 'Art', 3, 25.5);
 INSERT INTO Sailors VALUES (95, 'Bob', 3, 63.5);
 ```
-![output 4](insert sailors)
-![output 5]()
+![output 4](<output week2/insert sailors.jpeg>)
+![output 5](<output week2/insert sailors.jpeg>)
 ```
 INSERT INTO Reserves VALUES (22, 101, TO_DATE('10/10/98','MM/DD/RR'));
 INSERT INTO Reserves VALUES (22, 102, TO_DATE('10/10/98','MM/DD/RR'));
@@ -64,27 +57,27 @@ INSERT INTO Reserves VALUES (64, 101, TO_DATE('9/5/98','MM/DD/RR'));
 INSERT INTO Reserves VALUES (64, 102, TO_DATE('9/8/98','MM/DD/RR'));
 INSERT INTO Reserves VALUES (74, 103, TO_DATE('9/8/98','MM/DD/RR'));
 ```
-![output 6](insert reserves)
-![output 7]()
+![output 6](<output week2/insert reserves.jpeg>)
+![output 7](<output week2/insert reserves.jpeg>)
 ```
 INSERT INTO Boats VALUES (101, 'Interlake', 'blue');
 INSERT INTO Boats VALUES (102, 'Interlake', 'red');
 INSERT INTO Boats VALUES (103, 'Clipper', 'green');
 INSERT INTO Boats VALUES (104, 'Marine', 'red');
 ```
-![output 8](insert boats)
+![output 8](<output week2/insert boats.jpeg>)
 ```
 DESC sailors;
 ```
-![output](desc sailors)
+![output](<output week2/desc sailors.jpeg>)
 ```
 DESC reserves;
 ```
-![output](desc reserves)
+![output](<output week2/desc reserves.jpeg>)
 ```
 DESC boats;
 ```
-![output](desc boats)
+![output](<output week2/desc boats.jpeg>)
 ```
 SELECT * FROM Sailors;
 ```
@@ -96,16 +89,16 @@ SELECT * FROM Reserves;
 ```
 SELECT * FROM Boats;
 ```
-![output](output boats)
+![output](<output week2/output boats.jpeg>)
 
 SELECT sname,age FROM Sailors;
-![output](qs1)
+![output](<output week2/qs1.jpeg>)
 SELECT sname FROM Sailors WHERE rating>7;
-![output](qs2)
+![output](<output week2/qs2.jpeg>)
 SELECT s.sname FROM Sailors s,Reserves r
 WHERE s.sid=r.sid
 AND r.bid=103;
-![output](qs3)
+![output](<output week2/qs3)
 SELECT DISTINCT r.sid
 FROM Reserves r,Boats b
 WHERE r.bid=b.bid
