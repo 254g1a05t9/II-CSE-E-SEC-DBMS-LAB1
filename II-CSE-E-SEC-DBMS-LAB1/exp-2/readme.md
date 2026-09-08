@@ -9,7 +9,7 @@ CREATE TABLE Sailors (
 );
 ```
 ![output 1](output week2/create sailors.jpeg)
-#Boats table creation
+# Boats table creation
 CREATE TABLE Boats (
  bid NUMBER PRIMARY KEY,
  bname VARCHAR2(20) NOT NULL,
