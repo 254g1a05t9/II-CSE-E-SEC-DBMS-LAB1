@@ -1,12 +1,14 @@
-#DBMSLAB WEEK2
-#Sailors table creation
+# DBMSLAB WEEK2
+# Sailors table creation
+```
 CREATE TABLE Sailors (
     sid NUMBER PRIMARY KEY,
     sname VARCHAR2(50) NOT NULL,
     rating NUMBER NOT NULL,
     age NUMBER(4,1) NOT NULL
 );
-![output 1](create sailors)
+```
+![output 1](output week2/create sailors.jpeg)
 #Boats table creation
 CREATE TABLE Boats (
  bid NUMBER PRIMARY KEY,
