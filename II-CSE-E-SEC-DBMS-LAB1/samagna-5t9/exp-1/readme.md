@@ -129,5 +129,5 @@ DROP TABLE course;
 ```
 DROP TABLE student;
 ```
-![output](<output week1/drop student.jpeg>)
+![output](<output-week1/drop student.jpeg>)
 
