@@ -29,7 +29,7 @@ CREATE TABLE section (
     instructor VARCHAR2(50)
 );
 ```
-![output](<output-week1/section.jpeg>)
+![output](<output-week1/create section.jpeg>)
 # grade_report table creation
 ```
 CREATE TABLE grade_report (
