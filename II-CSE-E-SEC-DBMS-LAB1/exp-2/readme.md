@@ -124,7 +124,7 @@ WHERE s.sid=r.sid
 AND r.bid=b.bid
 AND s.sname='Lubber';
 ```
-![output](<output week2/q6.jpeg>)
+![output](<output week2/qs6.jpeg>)
 ```
 SELECT DISTINCT s.sname FROM Sailors s,Reserves r
 WHERE s.sid=r.sid;
