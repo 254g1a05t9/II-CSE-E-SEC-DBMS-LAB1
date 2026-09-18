@@ -346,4 +346,4 @@ WHERE HIRE_DATE < TO_DATE('01-JAN-2019', 'DD-MON-YYYY');
 SELECT * FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q27.png)
+![output 1](output-3a/q27.png)
