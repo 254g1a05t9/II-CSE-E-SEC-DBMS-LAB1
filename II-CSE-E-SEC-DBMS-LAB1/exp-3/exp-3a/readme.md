@@ -18,7 +18,7 @@ CREATE TABLE EMPLOYEE
 );
 
 ```
-![output 1](outputs-3a/create-emp.png)
+![output 1](output-3a/create-emp.png)
 
 # Inserting values
 
@@ -64,14 +64,14 @@ VALUES (110, 'Arjun', 'Singh', 'M', 'MK_MAN', 'Marketing', 68000, 5,
         TO_DATE('30-APR-2019','DD-MON-YYYY'), 'Jaipur');
 
 ```
-![output 2](outputs-3a/insert-emp.png)
+![output 2](output-3a/insert-emp.png)
 # Describing the table 
 
 ```      	 
 SELECT * FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/select-emp.png)
+![output 1](output-3a/select-emp.png)
 
 # q1
 
@@ -81,7 +81,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q1.png)
+![output 1](output-3a/q1.png)
 
 # q2
 
@@ -91,7 +91,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q2.png)
+![output 1](output-3a/q2.png)
 # q3
 
 ```
@@ -100,7 +100,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q3.png)
+![output 1](output-3a/q3.png)
 
 # q4
 
@@ -110,7 +110,7 @@ FROM EMPLOYEE
 WHERE HIRE_DATE > TO_DATE('01-JAN-2020', 'DD-MON-YYYY');
 
 ```
-![output 1](outputs-3a/q4.png)
+![output 1](output-3a/q4.png)
 
 # q5
 
@@ -120,7 +120,7 @@ SELECT EMPLOYEE_ID,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q5.png)
+![output 1](output-3a/q5.png)
 
 # q6
 
@@ -130,7 +130,7 @@ SELECT EMPLOYEE_ID,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q6.png)
+![output 1](output-3a/q6.png)
 
 # q7
 
@@ -140,7 +140,7 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q7.png)
+![output 1](output-3a/q7.png)
 
 # q8
 
@@ -150,7 +150,7 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q8.png)
+![output 1](output-3a/q8.png)
 
 # q9
 
@@ -160,7 +160,7 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q9.png)
+![output 1](output-3a/q9.png)
 
 # q10
 
@@ -171,7 +171,7 @@ FROM EMPLOYEE;
 
 ```
 
-![output 1](outputs-3a/q10.png)
+![output 1](output-3a/q10.png)
 
 # q11
 
@@ -182,7 +182,7 @@ FROM EMPLOYEE;
 
 ```
 
-![output 1](outputs-3a/q11.png)
+![output 1](output-3a/q11.png)
 
 
 # q12
@@ -193,7 +193,7 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q12.png)
+![output 1](output-3a/q12.png)
 
 # q13
 
@@ -204,7 +204,7 @@ FROM EMPLOYEE;
 
 ```
 
-![output 1](outputs-3a/q13.png)
+![output 1](output-3a/q13.png)
 
 # q14
 
@@ -214,7 +214,7 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q14.png)
+![output 1](output-3a/q14.png)
 
 # q15
 
@@ -224,7 +224,7 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q15.png)
+![output 1](output-3a/q15.png)
 
 # q16
 
@@ -234,7 +234,7 @@ SELECT FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q16.png)
+![output 1](output-3a/q16.png)
 
 # q17
 
@@ -244,7 +244,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q17.png)
+![output 1](output-3a/q17.png)
 
 # q18
 
@@ -254,7 +254,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q18.png)
+![output 1](output-3a/q18.png)
 
 # q19
 
@@ -264,7 +264,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q19.png)
+![output 1](output-3a/q19.png)
 
 # q20
 
@@ -274,7 +274,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q20.png)
+![output 1](output-3a/q20.png)
 
 # q21
 
@@ -284,7 +284,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q21.png)
+![output 1](output-3a/q21.png)
 
 # q22
 
@@ -294,7 +294,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, SALARY,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q22.png)
+![output 1](output-3a/q22.png)
 
 # q23
 
@@ -305,7 +305,7 @@ FROM EMPLOYEE;
 
 ```
 
-![output 1](outputs-3a/q23.png)
+![output 1](output-3a/q23.png)
 
 # q24
 
@@ -315,7 +315,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q24.png)
+![output 1](output-3a/q24.png)
 
 # q25
 
@@ -325,7 +325,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q25.png)
+![output 1](output-3a/q25.png)
 
 # q26
 
@@ -335,7 +335,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
 FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q26.png)
+![output 1](output-3a/q26.png)
 
 # q27
 
@@ -346,4 +346,4 @@ WHERE HIRE_DATE < TO_DATE('01-JAN-2019', 'DD-MON-YYYY');
 SELECT * FROM EMPLOYEE;
 
 ```
-![output 1](outputs-3a/q27.png)
+![output 1](output-3a/q27.png)
