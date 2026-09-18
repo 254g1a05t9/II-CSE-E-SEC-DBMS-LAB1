@@ -51,7 +51,7 @@ DESC course;
 ```
 DESC section;
 ```
-![output](<output-week1/desc section.jpeg>)
+![output](<output-week1/decs section.jpeg>)
 ```
 DESC grade_report;
 ```
