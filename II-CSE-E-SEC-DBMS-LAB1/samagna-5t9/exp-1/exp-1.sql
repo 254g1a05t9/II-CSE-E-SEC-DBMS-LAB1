@@ -72,7 +72,7 @@ VALUES(8,135,'A');
 
  DESC student;
  DESC course;
- DESC section1;
+ DESC section;
  DESC grand_report;
  
 SELECT * FROM TAB;
