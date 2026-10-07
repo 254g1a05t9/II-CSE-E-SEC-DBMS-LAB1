@@ -1,3 +1,4 @@
+```
 SET SERVEROUTPUT ON;
 #student table created
 CREATE TABLE STUDENT (
@@ -6,7 +7,9 @@ CREATE TABLE STUDENT (
     COURSE VARCHAR2(20),
     MARKS NUMBER(3)
 );
-![output1](output1.png)
+```
+![output](output-week5a/output1.png)
+```
 #insert data
 INSERT INTO STUDENT VALUES (101, 'Ayesha', 'CSE', 85);
 INSERT INTO STUDENT VALUES (102, 'Rahul', 'CSE', 55);
@@ -25,7 +28,9 @@ INSERT INTO STUDENT VALUES (114, 'Rohit', 'CSE', 39);
 INSERT INTO STUDENT VALUES (115, 'Sara', 'ECE', 81);
 
 COMMIT;
-![output2](output2.png)
+```
+![output](output-week5a/output2.png)
+```
 #code
 --PL/SQL CODE
 SET SERVEROUTPUT ON;
@@ -75,6 +80,7 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
 /
-![output3](output3.png)
-![output4](output4.png)
-![output5](output5.png)
+```
+![output](output-week5a/output3.png)
+![output](output-week5a/output4.png)
+![output](output-week5a/output5.png)
