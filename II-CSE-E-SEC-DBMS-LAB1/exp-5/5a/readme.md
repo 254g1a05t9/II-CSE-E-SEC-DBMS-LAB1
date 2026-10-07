@@ -8,7 +8,7 @@ CREATE TABLE STUDENT (
     MARKS NUMBER(3)
 );
 ```
-![output](output-week5a/output1.png)
+![output1](output-week5a/output1.png)
 ```
 #insert data
 INSERT INTO STUDENT VALUES (101, 'Ayesha', 'CSE', 85);
@@ -29,7 +29,7 @@ INSERT INTO STUDENT VALUES (115, 'Sara', 'ECE', 81);
 
 COMMIT;
 ```
-![output](output-week5a/output2.png)
+![output2](output-week5a/output2.png)
 ```
 #code
 --PL/SQL CODE
@@ -81,6 +81,6 @@ EXCEPTION
 END;
 /
 ```
-![output](output-week5a/output3.png)
-![output](output-week5a/output4.png)
-![output](output-week5a/output5.png)
+![output3](output-week5a/output3.png)
+![output4](output-week5a/output4.png)
+![output5](output-week5a/output5.png)
