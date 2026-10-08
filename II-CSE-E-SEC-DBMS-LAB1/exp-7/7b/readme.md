@@ -41,7 +41,7 @@ SELECT EMPLOYEE_ID,
        CALCULATE_ANNUAL_SALARY(MONTHLY_SALARY) AS ANNUAL_SALARY
 FROM EMPLOYEE;
 ```
-![output](output-7b/1.png)
+![output](output-week7b/1.png)
 ```
 -- EXPERIMENT-7(b)
 -- PROGRAM 2: FIND THE TOTAL NUMBER OF STUDENTS IN A COURSE
@@ -98,13 +98,13 @@ SELECT 'B.Tech' AS COURSE,
        COUNT_STUDENTS('B.Tech') AS TOTAL_STUDENTS
 FROM DUAL;
 ```
-![output](output-7b/2.png)
+![output](output-week7b/2.png)
 ```
 SELECT 'BCA' AS COURSE,
        COUNT_STUDENTS('BCA') AS TOTAL_STUDENTS
 FROM DUAL;
 ```
-![output](output-7b/3.png)
+![output](output-week7b/3.png)
 ```
 -- EXPERIMENT-7(b)
 -- PROGRAM 3: DETERMINE STUDENT GRADE USING A COMPLEX STORED FUNCTION
@@ -174,4 +174,4 @@ SELECT STUDENT_NAME,
        GET_GRADE(MARKS) AS GRADE
 FROM STUDENT12;
 ```
-![output](output-7b/4.png)
+![output](output-week7b/4.png)
